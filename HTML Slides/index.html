@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Web Development Workshop: Part 0</title>
+
+    <meta name="description" content="An interactive workshop on Regular Expressions with exercises">
+    <meta name="author" content="Arjun Bharadwaj">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <h1>Web Dev Workshop: HTML &amp; CSS Introduction</h1>
+          <h3>Part 0</h3>
+          <p>
+            <small>By Arjun, Pragmatic Programming Chair</small>
+          </p>
+          <h4>Please check in at: <span style="text-decoration:underline; text-transform: lowercase;">daviscsclub.org/here</span></h4>
+        </section>
+
+        <section>
+          <h4><em>Goals of this workshop</em></h4>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>HTML: Hypertext Markup Language</h2>
+          <pre><code data-trim>
+<meta charset="utf-8">
+<title>Page Title</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+          </code></pre>
+       </section>
+       
+       
+       <section>
+         <h2>General Structure</h2>
+         <pre><code data-trim>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    ...
+  &lt;/head&gt;
+  &lt;body&gt;
+    ...
+  &lt;/body&gt;
+&lt;/html&gt;
+        </code></pre>
+       </section>
+       
+        <section>
+          <h2>Head Tag</h2>
+          <pre><code data-trim>
+&lt;head&gt;
+   &lt;meta charset=&quot;utf-8&quot;&gt;
+   &lt;title&gt;Page Title&lt;/title&gt;
+   &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+   &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+         </code></pre>
+        </section>
+
+        <!-- Example of nested vertical slides -->
+        <section>
+          <h2>Commonly used Tags</h2>
+        </section>
+        
+        
+        <section>
+          <h2>Header Tags</h2>
+        <pre><code data-trim>
+&lt;h1&gt;Biggest Title&lt;/h1&gt;
+&lt;h2&gt;Bigger Title&lt;/h2&gt;
+&lt;h3&gt;Big Title&lt;/h3&gt;
+...
+&lt;h6&gt;Smallest Title&lt;/h6&gt;
+       </code></pre>
+        </section>
+        
+        <section>
+          <h2>Paragraph Tag</h2>
+        <pre><code data-trim>
+&lt;p&gt;This is a paragraph. Bla Bla Bla...&lt;/p&gt;
+       </code></pre>
+        </section>
+
+        <section>
+          <h2>List Tags</h2>
+        <pre><code data-trim>
+&lt;ul&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ul&gt;
+       </code></pre>
+        </section>
+        
+        <section>
+          <h2>List Tags(Cntd...)</h2>
+        <pre><code data-trim>
+&lt;ol type=&quot;1&quot;&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ol&gt;
+       </code></pre>
+        </section>
+        
+        <section>
+          <h2>Anchor Tags</h2>
+        <pre><code data-trim>
+&lt;nav&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;h.html&quot;&gt;HTML&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;c.html&quot;&gt;CSS&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;j.html&quot;&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;q.html&quot;&gt;jQuery&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+       </code></pre>
+        </section>
+
+        <section>
+          <h2>Now for the exercise....</h2>
+        </section>
+        
+        <section>
+          <h2>CSS</h2>
+        </section>
+        
+        <section>
+          <h2>Linking Stylesheet</h2>
+        <pre><code data-trim>
+   &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+       </code></pre>
+        </section>
+        
+       <section>
+         <h2>Then, in the stylesheet....</h2>
+       <pre><code data-trim>
+body {
+  background-image: url('...');
+}
+h1,h2,h3,h4,h5,h6 {
+  font-size: 20px;
+}
+      </code></pre>
+       </section>
+       
+       <section>
+      <section>
+        <h2>Two ways to custom style elements</h2>
+        <h6>By ID's</h6>
+      <pre><code data-trim>
+ &lt;p id=&quot;sample_paragraph&quot;&gt;This is a sample paragraph&lt;/p&gt;
+   </code></pre>
+   
+ <pre><code data-trim>
+ /* Then in the CSS */
+ #sample_paragraph {
+   color: red;
+ }
+  </code></pre>   
+      </section>
+      
+           <section>
+             <h2>By Classes</h2>
+           <pre><code data-trim>
+&lt;ul class=&quot;squareList&quot;&gt;
+  &lt;li&gt;Bla1&lt;/li&gt; 
+  &lt;li&gt;Bla2&lt;/li&gt;
+&lt;/ul&gt;
+        </code></pre>
+      <pre><code data-trim>
+/* Then in the CSS */
+.squareList {
+  list-style-type: square;
+}
+       </code></pre>   
+           </section>
+      </section>
+      
+      
+
+       
+
+        <section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+          <h2>Now, for the exercise</h2>
+          <ol>
+            <li>Set the <code>body</code> element's <code>background-image</code> to <code>blue_background.jpg</code>. Also set the <code>padding-left</code> to <code>1.5rem</code></li>
+            <li>Make the <code>h1,..h6</code> headers underlined. Use the <code>text-decoration</code> property</li>
+            <li>Set the <code>p</code>'s <code>font-size</code> to <code>18px</code></li>
+            <li>Make the last list of the webpage have square bullets. Use the <code>list-style-type</code> property</li>
+          </ol>
+        </section>
+
+        <section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+          <h2>Now, let's evaluate...</h2>
+        </section>
+
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
